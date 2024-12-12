@@ -1,0 +1,77 @@
+/* Стили для отзыва */
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.review-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Стили для отзыва */
+.reviews {
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+.reviews h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Стили для каждого отзыва */
+.review {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    list-style: none ;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+    margin: 8px 0;
+    color: #555;
+}
+
+.review strong {
+    font-weight: bold;
+    color: #222;
+}
+
+.review-rating {
+    color: #ff9800;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .reviews {
+        padding: 15px;
+    }
+
+    .review {
+        padding: 10px;
+    }
+
+    .reviews h2 {
+        font-size: 1.6em;
+    }
+
+    .review p {
+        font-size: 0.95em;
+    }
+}

@@ -1,0 +1,57 @@
+/* Общие стили для меню */
+.navigation {
+    background-color: #333;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  /* Стиль для мобильных устройств (при ширине экрана меньше 768px) */
+  @media (max-width: 768px) {
+    .menu {
+      display: none; /* Скрываем меню по умолчанию */
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+    }
+  
+    .menu.open {
+      display: flex; /* Показываем меню при добавлении класса "open" */
+    }
+  
+    .menu a {
+      padding: 15px;
+      border-top: 1px solid #fff;
+    }
+  
+    /* Стили для кнопки-бургера */
+    .burger {
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding: 10px;
+    }
+  
+    .burger-bar {
+      width: 30px;
+      height: 3px;
+      background-color: white;
+    }
+  }
+  

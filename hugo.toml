@@ -1,4 +1,5 @@
-baseURL = 'https://matveev-sl.github.io/hugo-test-task/'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'Hugo Test Task'
 theme = "mini"
+pagerSize = 5
