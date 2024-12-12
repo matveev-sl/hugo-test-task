@@ -22,5 +22,7 @@
     <loc>//localhost:1313/tags/</loc>
   </url><url>
     <loc>//localhost:1313/about/</loc>
+  </url><url>
+    <loc>//localhost:1313/reviews/</loc>
   </url>
 </urlset>
